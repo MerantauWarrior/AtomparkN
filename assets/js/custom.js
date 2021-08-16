@@ -4,7 +4,7 @@ $(document).ready(function () {
   $('.js-tab').click(function (e) {
     e.preventDefault();
     const tab = $(this).attr('href');
-    $('.js-tab').removeClass('active');
+    $(this).parent().find('.js-tab').removeClass('active');
     $(this).addClass('active');
     $(this).parent().siblings('.tabs').find('.tab').removeClass('tab_active');
     $(this).parent().siblings('.tabs').find('.tab'+tab).addClass('tab_active');
@@ -24,5 +24,27 @@ $(document).ready(function () {
   $('.to-top').click(function () {
     $("html, body").animate({scrollTop: 0}, 1000);
   });
+
+  // customers
+  $('.customers-row').each(function () {
+    var that = $(this);
+    var posX = 0;
+    var hoverded = false;
+    that.hover(function () {
+      hoverded = true;
+    }, function () {
+      hoverded = false;
+    })
+    setInterval(function () {
+      if (hoverded){
+        return false;
+      }
+      if (posX > that[0].offsetWidth/2){
+        posX = 0;
+      }
+      posX++;
+      that.css('transform', 'translateX(-'+posX+'px)');
+    }, 24)
+  })
 
 });
