@@ -163,11 +163,8 @@ h5{
 }
 /*header*/
 .header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     padding: 16px 0;
+    background-color: #fff;
     box-shadow: 0 1px 0 #E5E9F2;
 }
 .header__inner{
@@ -244,7 +241,7 @@ h5{
 }
 /*top*/
 .top{
-    padding: 242px 0 197px 0;
+    padding: 160px 0 197px 0;
 }
 .top h1{
     color: #0A1179;
@@ -349,6 +346,12 @@ h5{
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
+    background-color: #fff;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
 }
 .services-item__desctiption{
     margin-top: 12px;
