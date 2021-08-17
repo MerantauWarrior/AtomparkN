@@ -52,14 +52,14 @@
               automation</p>
             <a href="#" class="btn btn-green">Get Started</a>
           </div>
-          <div class="top__media"><img src="assets/img/landing/top.png" alt="text" width="650" height="472"></div>
+          <div class="top__media"><img src="assets/img/landing/top.svg" alt="text" width="650" height="472"></div>
         </div>
       </div>
     </section>
     <section class="engage">
       <div class="container">
         <h2>Engage customers on any channel, any time</h2>
-        <div class="engage__inner">
+        <div class="engage__inner" data-aos="fade-up" data-aos-offset="200">
           <div class="engage__controls">
             <a href="#engage-1" class="engage__control js-tab active">Marketing</a>
             <a href="#engage-2" class="engage__control js-tab">Sales</a>
@@ -67,7 +67,7 @@
           </div>
           <div class="tabs">
             <div class="tab tab_active" id="engage-1">
-              <div class="engage-tab" data-aos="fade-up" data-aos-offset="0">
+              <div class="engage-tab">
                 <div class="engage-tab__media"><img src="assets/img/landing/engage-1.svg" alt="text" width="287"
                                                     height="269"></div>
                 <div class="engage-tab__content">
@@ -678,24 +678,24 @@
   AOS.init({
     once: true,
     easing: 'linear',
-    duration: 250,
+    duration: 300,
     disable: 'mobile'
   });
 
   $(document).ready(function () {
-
-    $(".engage__control").on("click", function() {
-      $('.engage-tab').removeClass('aos-animate');
-      setTimeout(function() {
-        $('.engage-tab').addClass('aos-animate');
-      }, 0);
-    });
-    $(".use__btn").on("click", function() {
-      $('.use-tab').removeClass('aos-animate');
-      setTimeout(function() {
-        $('.use-tab').addClass('aos-animate');
-      }, 0);
-    });
+    //
+    // $(".engage__control").on("click", function() {
+    //   $('.engage-tab').removeClass('aos-animate');
+    //   setTimeout(function() {
+    //     $('.engage-tab').addClass('aos-animate');
+    //   }, 0);
+    // });
+    // $(".use__btn").on("click", function() {
+    //   $('.use-tab').removeClass('aos-animate');
+    //   setTimeout(function() {
+    //     $('.use-tab').addClass('aos-animate');
+    //   }, 0);
+    // });
 
     $('.js-tab').click(function (e) {
       e.preventDefault();
