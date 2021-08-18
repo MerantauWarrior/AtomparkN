@@ -1,0 +1,29 @@
+.text-page__head{
+    padding: 126px 0 138px 0;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #0637A3;
+}
+.text-page__content{
+    padding: 126px 0 138px 0;
+    font-size: 18px;
+    line-height: 32px;
+}
+.text-page h2{
+    margin-bottom: 12px;
+    text-align: left;
+}
+.text-page h2{
+    margin-bottom: 8px;
+}
+.text-page ul{
+    padding-left: 26px;
+    font-size: 16px;
+    line-height: 30px;
+}
+@media all and (max-width: 767px){
+    .text-page__head,
+    .text-page__content{
+        padding: 60px 0;
+    }
+}
