@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>404</title>
+  <meta name="description" content="some text">
+  <meta name="keywords" content="some, text">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .error-page{
+      display: flex;
+      height: 100%;
+      background-color: #0637A3;
+    }
+    .error-page__inner{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .error-page__logo{
+      position: absolute;
+      top: 61px;
+      left: 15px;
+    }
+    .error-page__content{
+      display: flex;
+      flex-direction: column;
+      margin: 150px 0;
+    }
+    .error-page-number{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 78px;
+      height: 78px;
+      margin-bottom: -39px;
+      margin-left: -106px;
+      -webkit-border-radius: 100% 100% 0 100%;
+      -moz-border-radius: 100% 100% 0 100%;
+      border-radius: 100% 100% 0 100%;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 16px;
+      background-color: #FFFFFF;
+    }
+    .error-page-figure{
+      margin-bottom: 55px;
+    }
+    .error-page__link{
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 16px;
+      color: #FFFFFF;
+    }
+    .error-page__link span{
+      margin-right: 8px;
+      -webkit-transition: all 0.25s;
+      -moz-transition: all 0.25s;
+      -ms-transition: all 0.25s;
+      -o-transition: all 0.25s;
+      transition: all 0.25s;
+    }
+    .error-page__link:hover span{
+      margin-right: 11px;
+    }
+    @media all and (max-width: 767px){
+      .error-page__logo{
+        top: 30px;
+      }
+      .error-page-number{
+        margin-bottom: 30px;
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="error-page">
+  <div class="container error-page__inner">
+    <a href="#" class="error-page__logo"><img src="assets/img/404/logo.svg" alt="text"></a>
+    <div class="error-page__content">
+      <div class="error-page-number">404</div>
+      <div class="error-page-figure">
+        <img src="assets/img/404/404.gif" alt="texet">
+      </div>
+      <a href="#" class="error-page__link">
+        <span>Return to main page</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.1954 4.47132C9.93503 4.21097 9.93503 3.78886 10.1954 3.52851C10.4557 3.26816 10.8778 3.26816 11.1382 3.52851L15.1382 7.52851C15.3985 7.78886 15.3985 8.21097 15.1382 8.47132L11.1382 12.4713C10.8778 12.7317 10.4557 12.7317 10.1954 12.4713C9.93503 12.211 9.93503 11.7889 10.1954 11.5285L13.0573 8.66657H1.34065C0.968395 8.66657 0.666626 8.3681 0.666626 7.99991C0.666626 7.63172 0.968395 7.33324 1.34065 7.33324H13.0573L10.1954 4.47132Z" fill="white"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
