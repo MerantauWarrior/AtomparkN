@@ -75,6 +75,7 @@ a, button, svg{
 a{
     outline: none;
     text-decoration: none;
+    color: #0637A3;
 }
 ul,ol{
     margin: 0;
@@ -160,6 +161,41 @@ h5{
 }
 .tab_active{
     display: block;
+}
+.box{
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 20px rgba(41, 41, 42, 0.07);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+.a-w-arrow{
+    position: relative;
+    display: inline-flex;
+    padding-right: 17px;
+}
+.a-w-arrow span{
+    margin-right: 8px;
+}
+.a-w-arrow > svg{
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.a-w-arrow svg{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.a-w-arrow:hover svg{
+    right: -3px;
 }
 /*header*/
 .header{
